@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>MiniMercado - Ofertas</title>
+</head>
+<body>
+  <header>
+    <h1>Ofertas da Semana</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="ofertas.html">Ofertas</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+    <h4>Todos os produtos estão disponíveis para retirada no local e tele-entrega.</h4>
+    <button id="btn-acessibilidade" onclick="toggleAcessibilidade()">A+</button>
+  </header>
+
+  <main>
+    <h2>Confira nossas promoções:</h2>
+    <ul>
+      <li>
+        <img src="fsw img/alface.jpg" alt="Alface">
+        <p>Alface Un - <span class="preco">R$ 1,99</span></p>
+      </li>
+      <li>
+        <img src="fsw img/farinha.png" alt="Farinha de Trigo">
+        <p>Farinha de Trigo 1kg - <span class="preco">R$ 4,50</span></p>
+      </li>
+      <li>
+        <img src="fsw img/sabao.png" alt="Sabão em pó">
+        <p>Sabão em pó 800g - <span class="preco">R$ 9,50</span></p>
+      </li>
+      <li>
+        <img src="fsw img/desinfetante.png" alt="Desinfetante">
+        <p>Desinfetante 2L - <span class="preco">R$ 6,50</span></p>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Minimercado - Todos os direitos reservados.</p>
+    <h3>📞 Informações de Contato</h3>
+    <p><strong>Telefone:</strong> (51) 1234-5678</p>
+    <p><strong>WhatsApp:</strong> (51) 98765-4321</p>
+    <p><strong>E-mail:</strong> brunofraga25@gmail.com</p>
+    <p><strong>Endereço:</strong> Rua das Flores, 123 - Porto Alegre, RS</p>
+  </footer>
+  <script>
+  function toggleAcessibilidade() {
+    document.body.classList.toggle('acessibilidade');
+  }
+  </script>
+</body>
+</html>
