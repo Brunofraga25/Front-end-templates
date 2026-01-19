@@ -1,0 +1,229 @@
+/* style.css */
+
+:root {
+  --cor-principal: #001f3f;
+  --cor-secundaria: #ffffff;
+  --cor-preco: #0066cc;
+  --cor-destaque: #ffcc00;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--cor-secundaria);
+  color: #333;
+}
+
+header {
+  background: var(--cor-principal);
+  color: var(--cor-secundaria);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  color: var(--cor-destaque);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  background: var(--cor-secundaria);
+  color: var(--cor-principal);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: var(--cor-destaque);
+  color: var(--cor-principal);
+}
+
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+main h2, main h3, label, p {
+  color: var(--cor-principal);
+  margin-bottom: 10px;
+}
+
+/* Carrossel */
+.carrossel {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.carrossel img {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 3px solid var(--cor-principal);
+}
+
+/* Listas de produtos e ofertas */
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+ul li {
+  list-style: none;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+ul li img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.preco {
+  color: var(--cor-preco);
+  font-weight: bold;
+}
+
+/* Formulários */
+form {
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--cor-principal);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+form button {
+  background: var(--cor-principal);
+  color: var(--cor-secundaria);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #003366;
+}
+
+/* Botão de acessibilidade */
+#btn-acessibilidade {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--cor-destaque);
+  color: var(--cor-principal);
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#btn-acessibilidade:hover {
+  background: #ffdb4d;
+  transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+  background: var(--cor-principal);
+  color: var(--cor-secundaria);
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer h3, footer p {
+  color: var(--cor-secundaria);
+}
+
+/* Modo acessibilidade (alto contraste e fontes maiores) */
+.acessibilidade {
+  background: #000 !important;
+  color: #fff !important;
+  font-size: 1.2em;
+}
+
+.acessibilidade h1, 
+.acessibilidade h2, 
+.acessibilidade h3, 
+.acessibilidade label, 
+.acessibilidade p, 
+.acessibilidade footer {
+  color: #fff !important;
+}
+
+.acessibilidade a {
+  color: yellow !important;
+  background: #000 !important;
+}
+
+.acessibilidade img {
+  border: 3px solid yellow;
+}
+
+/* Ajustes para formulários no modo acessibilidade */
+.acessibilidade form {
+  background: #000 !important;
+  border: 2px solid yellow;
+}
+
+.acessibilidade form label {
+  color: #fff !important;
+}
+
+.acessibilidade form input,
+.acessibilidade form textarea {
+  background: #111;
+  color: #fff;
+  border: 1px solid yellow;
+}
+
+.acessibilidade form button {
+  background: yellow;
+  color: #000;
+  font-weight: bold;
+}
